@@ -33,8 +33,10 @@
 
 ## 安装
 
-1. 把 `com.lmbox.ai-agent` 文件夹放到你的 Unity 工程的 `Packages/` 目录下；
-   或者在 Package Manager 中选择 **Add package from disk...**，选中本包的 `package.json`。
+仓库根目录就是 Unity 插件包，包含 `package.json`、`Editor/` 和 `WebAgent~/`。本地演示工程 `AIAgentDemo/` 位于仓库之外，不随插件提交。
+
+1. 将本仓库检出为 `com.lmbox.ai-agent` 文件夹，放到你的 Unity 工程的 `Packages/` 目录下；
+   或者在 Package Manager 中选择 **Add package from disk...**，选中仓库根目录的 `package.json`。
 2. Unity 会自动拉取依赖 `com.unity.nuget.newtonsoft-json` 并编译。
 3. 菜单栏打开 **Window → AI Agent**（IMGUI 版）或 **Window → AI Agent (Web)**（web-agent 版）。
 4. 非 macOS 平台的 Web 版如需 `unity-webview` 独立原生窗口，在 manifest 中加入 `"net.gree.unity-webview": "https://github.com/gree/unity-webview.git?path=/dist/package"`（演示工程已配置）。
