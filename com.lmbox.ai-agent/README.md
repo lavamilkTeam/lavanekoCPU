@@ -65,7 +65,13 @@ LLM/OpenAIChatClient.cs      OpenAI 兼容协议客户端（非流式，function
 LLM/ChatTypes.cs             消息 / 工具调用 / 工具定义模型
 Tools/AgentTool.cs           工具基类（名称、描述、JSON Schema、是否需确认）
 Tools/ToolRegistry.cs        工具注册表
-Tools/BuiltinTools.cs        7 个内置编辑器工具（见下）
+Tools/GetSceneHierarchyTool.cs 读取场景层级和组件
+Tools/CreateGameObjectTool.cs 创建物体和基础几何体
+Tools/ReadConsoleLogsTool.cs  读取近期日志
+Tools/WriteScriptTool.cs      写入脚本等文本资源
+Tools/ListAssetsTool.cs       搜索项目资源
+Tools/PlayModeControlTool.cs  控制播放、暂停和单步
+Tools/ExecuteMenuItemTool.cs  执行编辑器菜单命令
 Tools/ConsoleLogCapture.cs   Console 日志环形缓冲（供 AI 读取）
 Settings/AgentSettings.cs    设置持久化（ProjectSettings/*.json）
 ```
